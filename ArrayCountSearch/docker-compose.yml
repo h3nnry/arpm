@@ -1,0 +1,8 @@
+services:
+  app:
+    image: php:8.2-apache
+    ports:
+      - 80:80
+    working_dir: /var/www/html
+    volumes:
+      - './src:/var/www/html'
